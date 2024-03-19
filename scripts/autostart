@@ -1,0 +1,6 @@
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+@xscreensaver -no-splash
+@qjackctl --start
+@lxterminal -e python3 /home/pi/Desktop/the-plants/config/plants.watcher.py
+@lxterminal -e /home/pi/Desktop/the-plants/config/delay-start.sh
