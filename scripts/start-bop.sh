@@ -1,3 +1,2 @@
 #!/bin/bash
-sleep 20
-purr-data -jack /home/pi/Desktop/the-plants/MAIN.pd
+pd -nogui -jack /home/pi/Desktop/bs-casula/_BS_CASULA_PI.pd
