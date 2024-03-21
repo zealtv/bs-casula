@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/pi/Desktop/bs-casula
+cd /home/pi/bs-casula
 echo "stashing changes"
 git stash
 echo "pulling from git"
