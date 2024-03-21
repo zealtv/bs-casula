@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo cp ./autostart /etc/xdg/lxsession/LXDE-pi/
+sudo cp ./rc.local /etc/

@@ -1,12 +1,12 @@
 #!/bin/bash
-cd /home/pi/Desktop/the-plants
+cd /home/pi/Desktop/bs-casula
 echo "stashing changes"
 git stash
 echo "pulling from git"
 git pull
 echo "updating submodules"
 git submodule update --init --recursive
-cd config
+cd scripts
 echo "copying scripts"
 ./copyscripts.sh
 echo "rebooting in 5 seconds..."

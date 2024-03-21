@@ -1,3 +1,6 @@
+## TODO this should have an OSC listener for shutting down and updating
+## See yellow notebook for details
+
 import os
 import time
 
