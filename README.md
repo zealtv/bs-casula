@@ -1,6 +1,10 @@
 ```
 
-git https://github.com/zealtv/bs-casula
+
+# Download and in Pure Data
+http://puredata.info/downloads/pure-data
+
+# download zip https://github.com/zealtv/bs-casula
 
 # open terminal  
 
@@ -24,11 +28,8 @@ git stash
 
 
 
+# Add samples 
 
-
-
-# Download and in Pure Data
-http://puredata.info/downloads/pure-data
 
 
 
