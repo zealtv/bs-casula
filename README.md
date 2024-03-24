@@ -1,5 +1,37 @@
 ```
 
+git https://github.com/zealtv/bs-casula
+
+# open terminal  
+
+# IF NOT INSTALLED
+# clone git repo to home directory
+git clone --recursive https://github.com/zealtv/bs-casula.git
+
+
+# go to working directory
+cd bs-casula
+
+# open in finder
+open .
+
+
+# to update
+git pull
+
+# may need to stash
+git stash
+
+
+
+
+
+
+# Download and in Pure Data
+http://puredata.info/downloads/pure-data
+
+
+
 
 # connect
 ssh pi@192.168.0.100
@@ -18,7 +50,6 @@ cd bs-casula/scripts
 ./update
 
 # wait to reboot and reconnect..
-
 
 
 
