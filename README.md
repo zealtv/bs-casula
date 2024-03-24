@@ -28,8 +28,26 @@ git stash
 
 
 
-# Add samples 
+# pure data settings
+samplerate to 22050
+block size 256 if required
 
+
+#run _BS_CASULA_PI.pd
+
+# control with _BS_CASULA_CONTROL.pd
+
+
+
+
+
+
+
+
+# Add samples 
+copy samples.zip to bs-casula/bop/
+
+and unzip samples directory
 
 
 
