@@ -27,31 +27,25 @@ git pull
 git stash
 
 
-
-# pure data settings
-samplerate to 22050
-block size 256 if required
-
-
-#run _BS_CASULA_PI.pd
-
-# control with _BS_CASULA_CONTROL.pd
-
-
-
-
-
-
-
-
 # Add samples 
 copy samples.zip to bs-casula/bop/
 
 and unzip samples directory
 
 
+# pure data settings
+samplerate to 22050
+block size 256 if required
 
 
+# run _BS_CASULA_PI.pd
+
+# control globally across network 
+# _BS_CASULA_CONTROL.pd
+
+
+
+# remote connection
 # connect
 ssh pi@192.168.0.100
 ... password
