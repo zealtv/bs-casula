@@ -16,7 +16,7 @@
 #X obj 21 51 namecanvas bs-casula;
 #X obj 21 22 declare -path ./bop/bop.p;
 #N canvas 102 49 1326 549 osc-and-control 0;
-#X msg 726 188 1;
+#X msg 726 188 0.964286;
 #X obj 585 148 s bs-casula;
 #X msg 585 117 menusave;
 #X obj 299 43 netreceive -u -b 5550;
@@ -30,12 +30,12 @@
 #X obj 585 87 route save;
 #X text 725 29 DENSITY;
 #X text 592 35 SAVE;
-#X msg 916 188 1;
+#X msg 916 188 0.978571;
 #X obj 916 58 r osc-in;
 #X msg 916 131 set \$1 \, bang;
 #X obj 916 94 route gain;
 #X text 915 29 GAIN;
-#X msg 1081 189 0.764286;
+#X msg 1081 189 0.9;
 #X obj 1081 59 r osc-in;
 #X msg 1081 132 set \$1 \, bang;
 #X text 1080 30 FILTER;
