@@ -6,10 +6,12 @@ http://puredata.info/downloads/pure-data
 
 # download zip https://github.com/zealtv/bs-casula
 
+# OR
+
 # open terminal  
 
 # IF NOT INSTALLED
-# clone git repo to home directory
+# clone git repo to home directory (or anywhere)
 git clone --recursive https://github.com/zealtv/bs-casula.git
 
 
