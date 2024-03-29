@@ -5,7 +5,7 @@
 #X obj 22 80 loadbang;
 #X obj 21 51 namecanvas bs-casula;
 #X obj 21 22 declare -path ./bop/bop.p;
-#X obj 247 23 tgl 19 1 empty empty start/stop 24 10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 247 23 tgl 19 1 empty empty start/stop 24 10 0 12 #fcfcfc #000000 #000000 1 1;
 #X obj 247 54 input-and-sequencing;
 #X obj 22 192 r cmd;
 #X obj 159 263 print report;
