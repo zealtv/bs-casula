@@ -1,3 +1,4 @@
+## Running Locally 
 ```
 # Download and in Pure Data
 http://puredata.info/downloads/pure-data
@@ -43,40 +44,82 @@ block size 256 if required
 # control globally across network 
 # _BS_CASULA_CONTROL.pd
 
+```
 
 
-# remote connection
-# connect
-ssh pi@192.168.0.100
-... password
+## Installing on Pi
+# Installation and Setup
+## Flash SD using Raspberry Pi Imager
+- Choose OS RASPBERRY PI OS LITE (64-BIT)
+- Set username and password
+- configure wireless LAN
+- enable SSH
+- Flash SD
 
-# to see what's running
-htop 
+## Install packages
+```
+# login
+ssh pi@raspberrypi.local
 
-# to quit
-q
+# update
+sudo apt-get update
+sudo apt-get upgrade
 
-# go to directory
-cd bs-casula/scripts	
+# set up hifiberry miniamp
+sudo nano /boot/config.txt
 
-# update (needs internet)
-./update
+# comment out dtparam=audio=on
 
-# wait to reboot and reconnect..
+# edit this line to match:
+dtoverlay=vc4-kms-v3d,noaudio
 
+# add at bottom
+dtoverlay=hifiberry-dac
 
+# reboot
+sudo reboot
+
+# log back in...
+ssh pi@raspberrypi.local
+
+# set performance options > gpu memory to 16 (if applicable)
+sudo raspi-config
+
+# install jack2
+sudo apt-get install jackd2
+
+# install git
+sudo apt-get install git
+
+# install pure-data dependencies
+sudo apt-get install build-essential automake autoconf libtool gettext libasound2-dev libjack-jackd2-dev tcl tk wish
+
+# install puredata 0.54+
+cd ~
+git clone https://github.com/pure-data/pure-data.git
+cd ./pure-data/
+./autogen.sh
+./configure --enable-jack
+make
+sudo make install
+```
+
+## Install project code
+```
+# goto home directory
+cd ~
+
+# clone this repo
+git clone https://github.com/zealtv/bs-casula.git
+
+# goto scripts directory
+cd ./bs-casula/scripts
+
+# run update script to install rc.local autostart file and reboot
+sudo ./update.sh
+
+# pi should reboot with jack, python, and puredata running
 
 ```
 
 
-# running on the pi...
-
-*shutdown unneeded services and start jack at 22050*
-```
-scripts/start-jack.sh 
-```
-
-*start _BS_CASULA_A.pd pd sketch*
-```
-scripts/start-bop.sh
-```
