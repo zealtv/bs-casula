@@ -23,7 +23,7 @@ sleep 5
 
 echo "starting Jack"
 # Start JACK!
-jackd -P70 -p16 -t2000 -d alsa -dhw:sndrpihifiberry -p 128 -n 3 -r 22050 -s &
+jackd -P70 -p16 -t2000 -d alsa -hw:sndrpihifiberry -p 128 -n 3 -r 22050 -s &
 
 # leave enough time for jack to start before launching PD
 sleep 30

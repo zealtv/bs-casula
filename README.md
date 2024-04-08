@@ -50,7 +50,9 @@ block size 256 if required
 ## Installing on Pi
 # Installation and Setup
 ## Flash SD using Raspberry Pi Imager
-- Choose OS RASPBERRY PI OS LITE (64-BIT)
+
+!! USE OLDER IMAGE raspios_oldstable_lite_armhf-2023-02-22/	
+
 - Set username and password
 - configure wireless LAN
 - enable SSH
@@ -68,16 +70,24 @@ sudo apt-get upgrade
 # set up hifiberry miniamp
 sudo nano /boot/config.txt
 
-# comment out dtparam=audio=on
+
+#Edit line as below (incuding comment)
+
+#dtparam=audio=on
+dtoverlay=hifiberry-dac
 
 # edit this line to match:
 dtoverlay=vc4-kms-v3d,noaudio
 
-# add at bottom
-dtoverlay=hifiberry-dac
+
+
+# save
 
 # reboot
 sudo reboot
+
+sudo apt-get install sox
+play -n synth sine 1000
 
 # log back in...
 ssh pi@raspberrypi.local
