@@ -17,14 +17,6 @@ if [ "$_IP" ]; then
   printf "My IP address is %s\n" "$_IP"
 fi
 
-sleep 5
-
-/home/pi/bs-casula/scripts/start-jack.sh
-
-sleep 10
-
-/home/pi/bs-casula/scripts/start-bop.sh
-
-sleep 5
+su pi -c '/home/pi/bs-casula/scripts/start.sh'
 
 exit 0
