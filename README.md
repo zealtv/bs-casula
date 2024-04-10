@@ -47,12 +47,9 @@ block size 256 if required
 ```
 
 
-## Installing on Pi
-# Installation and Setup
+
+# Installation on Pi
 ## Flash SD using Raspberry Pi Imager
-
-!! USE OLDER IMAGE raspios_oldstable_lite_armhf-2023-02-22/	
-
 - Set username and password
 - configure wireless LAN
 - enable SSH
@@ -76,18 +73,12 @@ sudo nano /boot/config.txt
 #dtparam=audio=on
 dtoverlay=hifiberry-dac
 
-# edit this line to match:
-dtoverlay=vc4-kms-v3d,noaudio
-
-
 
 # save
 
 # reboot
 sudo reboot
 
-sudo apt-get install sox
-play -n synth sine 1000
 
 # log back in...
 ssh pi@raspberrypi.local
