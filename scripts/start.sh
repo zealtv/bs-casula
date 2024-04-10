@@ -17,8 +17,6 @@
 #echo -n performance | sudo tee /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 
 # get available soundcards using cat /proc/asound/cards
-# edit the -dhw: command below as needed
-
 
 echo "starting Jack"
 # Start JACK!
