@@ -126,11 +126,12 @@ cd ~
 # clone this repo
 git clone https://github.com/zealtv/bs-casula.git
 
-# goto scripts directory
-cd ./bs-casula/scripts
+# copy samples.zip to ~/bs-casula/bop/
+# unzip
+unzip ~/bs-casula/bop/samples.zip
 
 # run update script to install rc.local autostart file and reboot
-sudo ./update.sh
+sudo ~bs-casula/scripts/update.sh
 
 # pi should reboot with jack, python, and puredata running
 
