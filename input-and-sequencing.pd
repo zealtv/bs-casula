@@ -1,5 +1,5 @@
 #N canvas 270 37 1140 891 12;
-#X msg 800 204 0.835714;
+#X msg 800 204 0.264286;
 #X obj 295 38 netreceive -u -b 5550;
 #X obj 295 67 oscparse;
 #X obj 295 96 list trim;
@@ -16,7 +16,7 @@
 #X msg 1070 147 set \$1 \, bang;
 #X obj 1070 110 route gain;
 #X text 1069 45 GAIN;
-#X msg 1265 205 0.1296;
+#X msg 1265 205 0.123538;
 #X obj 1265 75 r osc-in;
 #X msg 1265 148 set \$1 \, bang;
 #X text 1264 46 FILTER;
@@ -96,7 +96,7 @@
 #X text 459 546 every three minutes;
 #X msg 509 138 saveto;
 #X obj 599 173 s input-and-sequencing;
-#X msg 599 142 saveto;
+#X msg 599 142 write;
 #X connect 0 0 30 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
