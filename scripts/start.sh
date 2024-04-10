@@ -28,10 +28,10 @@ sleep 30
 # PYTHON
 # todo
 
-echo "enable audio"
-/home/pi/bs-casula/enable-audio.sh &
+#enable audio
+sudo /home/pi/bs-casula/enable-audio.sh &
 
-sleep 1
+
 
 echo "starting PD"
 # PUREDATA
