@@ -6,6 +6,8 @@ echo "pulling from git"
 git pull
 echo "updating submodules"
 git submodule update --init --recursive
+echo setting permissions
+chown -R pi ./
 cd scripts
 echo "copying rc.local"
 sudo cp ./rc.local /etc/
