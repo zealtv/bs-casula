@@ -28,8 +28,16 @@ sleep 30
 # PYTHON
 # todo
 
+echo "enable audio"
+/home/pi/bs-casula/enable-audio.sh &
+
+sleep 1
+
 echo "starting PD"
 # PUREDATA
 pd -nogui -jack /home/pi/bs-casula/test.pd &
+
+
+
 
 exit
