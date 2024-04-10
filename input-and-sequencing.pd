@@ -1,5 +1,5 @@
 #N canvas 0 83 1470 790 12;
-#X msg 630 184 1;
+#X msg 630 184 0;
 #X obj 295 38 netreceive -u -b 5550;
 #X obj 295 67 oscparse;
 #X obj 295 96 list trim;
@@ -8,12 +8,12 @@
 #X obj 630 110 route density;
 #X msg 630 147 set \$1 \, bang;
 #X text 629 45 DENSITY;
-#X msg 1080 184 0.728571;
+#X msg 1080 184 0;
 #X obj 1080 74 r osc-in;
 #X msg 1080 147 set \$1 \, bang;
 #X obj 1080 110 route gain;
 #X text 1079 45 GAIN;
-#X msg 855 185 0.69876;
+#X msg 855 185 0;
 #X obj 855 75 r osc-in;
 #X msg 855 148 set \$1 \, bang;
 #X text 854 46 FILTER;
@@ -105,8 +105,8 @@
 #X obj 1466 112 route save;
 #X text 1473 60 SAVE;
 #X msg 1305 573 density \$1;
-#X msg 1391 573 gain \$1;
-#X msg 1477 573 filter \$1;
+#X msg 1477 573 gain \$1;
+#X msg 1391 573 filter \$1;
 #X obj 1305 625 s osc-in;
 #X obj 1466 145 t b b;
 #X obj 1543 254 route density filter gain;
@@ -185,8 +185,8 @@
 #X connect 98 0 99 0;
 #X connect 99 0 100 0;
 #X connect 100 0 105 0;
-#X connect 100 1 106 0;
-#X connect 100 2 107 0;
+#X connect 100 1 107 0;
+#X connect 100 2 106 0;
 #X connect 101 0 88 0;
 #X connect 102 0 103 0;
 #X connect 103 0 109 0;
