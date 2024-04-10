@@ -31,7 +31,7 @@ sleep 30
 
 echo "starting PD"
 # PUREDATA
-pd -nogui -jack /home/pi/bs-casula/test.pd &
+pd -nogui -jack /home/pi/bs-casula/_BS_CASULA_PI.pd &
 
 
 
