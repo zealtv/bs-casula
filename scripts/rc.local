@@ -19,6 +19,7 @@ fi
 
 #enable audio
 echo "16" > /sys/class/gpio/export 
+sleep 1 # required in some cases
 echo "out" > /sys/class/gpio/gpio16/direction
 echo "1" > /sys/class/gpio/gpio16/value 
 echo "16" > /sys/class/gpio/unexport
