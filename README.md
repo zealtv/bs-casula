@@ -112,7 +112,11 @@ cd ./pure-data/
 ./configure --enable-jack
 make
 sudo make install
+
+
 ```
+
+
 
 ## Install project code
 ```
