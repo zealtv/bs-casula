@@ -1,7 +1,7 @@
 #!/bin/bash
 cd /home/pi/bs-casula
-echo "--- stashing changes"
-git stash
+echo "--- clearing changes"
+git restore .
 echo "--- pulling from git"
 git pull
 echo "--- updating submodules"
