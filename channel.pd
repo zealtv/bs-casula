@@ -125,6 +125,9 @@
 #X obj 497 149 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 260 462 r myVar1;
 #X obj 260 486 print MYVAR;
+#X obj 373 465 r myVar2;
+#X obj 373 492 list tosymbol;
+#X obj 375 521 print MYVAR2;
 #X connect 3 0 13 0;
 #X connect 6 0 7 0;
 #X connect 7 0 8 1;
@@ -153,3 +156,5 @@
 #X connect 37 0 38 0;
 #X connect 39 0 37 0;
 #X connect 40 0 41 0;
+#X connect 42 0 43 0;
+#X connect 43 0 44 0;
