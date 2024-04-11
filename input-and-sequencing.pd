@@ -44,7 +44,7 @@
 #X obj 31 466 s cmd;
 #X text 27 411 fades work;
 #X text 163 250 < HARD STOP;
-#X text 158 316 < TRICKLE STOP;
+#X text 198 306 < TRICKLE STOP;
 #X obj 40 361 s cmd;
 #X obj 636 448 t b b b, f 36;
 #X text 736 401 make a lightweight bop.seq!;
