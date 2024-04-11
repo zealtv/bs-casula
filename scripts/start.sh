@@ -31,7 +31,7 @@ sleep 5
 #MACADDRESS=$(cat /sys/class/net/ens1f0/address)
 #STARTTIME is passed in to seed random numbers etc
 now=$(date --iso-8601=seconds)
-STARTDATE=$(date -d "$now" +%Y%m%d%H%M%S)
+STARTDATE=$(date -d "$now" +%Y%m%d)
 STARTTIME=$(date -d "$now" +%H%M%S)
 
 
