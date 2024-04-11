@@ -1,3 +1,3 @@
 #N canvas 1148 381 272 282 12;
-#X obj 42 59 control-panel;
 #X text 64 32 BS_CUSULA_CONTROL;
+#X obj 42 59 sub/control-panel;
