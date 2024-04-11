@@ -1,4 +1,4 @@
-#N canvas 121 172 396 423 12;
+#N canvas 919 472 396 423 12;
 #X declare -path ./bop/bop.p;
 #X obj 21 338 dac~, f 26;
 #X obj 22 179 r cmd;
@@ -9,8 +9,8 @@
 #X obj 201 203 route all 1;
 #X obj 81 292 print report0;
 #X obj 261 293 print report1;
-#X msg 22 109 \; pd dsp 1;
-#X obj 22 80 loadbang;
+#X msg 22 99 \; pd dsp 1;
+#X obj 22 70 loadbang;
 #X text 35 279 left;
 #X text 216 278 right;
 #X obj 21 22 declare -path ./bop/bop.p;
