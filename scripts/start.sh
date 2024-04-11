@@ -27,12 +27,12 @@ sleep 15
 
 # PYTHON
 # todo
-MACADDRESS=$(cat /sys/class/net/ens1f0/address)
+#MACADDRESS=$(cat /sys/class/net/ens1f0/address)
 STARTTIME=$(date +%s)
 
 echo "starting PD"
 # PUREDATA
-pd -nogui -jack -open "/home/pi/bs-casula/_BS_CASULA_PI.pd" -send "; STARTTIME $STARTTIME; MACADDRESS $MACADDRESS" &
+pd -nogui -jack -open "/home/pi/bs-casula/_BS_CASULA_PI.pd" -send "; STARTTIME $STARTTIME" &
 
 
 
