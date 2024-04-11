@@ -1,4 +1,4 @@
-#N canvas 0 83 1470 790 12;
+#N canvas 580 118 830 756 12;
 #X msg 630 184 1;
 #X obj 295 38 netreceive -u -b 5550;
 #X obj 295 67 oscparse;
@@ -8,12 +8,12 @@
 #X obj 630 110 route density;
 #X msg 630 147 set \$1 \, bang;
 #X text 629 45 DENSITY;
-#X msg 1080 184 0.05;
+#X msg 1080 184 0.0642857;
 #X obj 1080 74 r osc-in;
 #X msg 1080 147 set \$1 \, bang;
 #X obj 1080 110 route gain;
 #X text 1079 45 GAIN;
-#X msg 855 185 1;
+#X msg 855 185 0.720853;
 #X obj 855 75 r osc-in;
 #X msg 855 148 set \$1 \, bang;
 #X text 854 46 FILTER;
@@ -111,7 +111,7 @@
 #X text 1310 25 PARAMETER SAVING AND LOADING;
 #X text 586 20 OSC IN ==================================================================================, f 92;
 #X msg 65 208 all ramble stop \, all ramble start;
-#X msg 31 606 all ramble folder 0 \, all start, f 21;
+#X msg 31 606 all ramble folder 0 \, all ramble start, f 21;
 #X connect 0 0 27 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;

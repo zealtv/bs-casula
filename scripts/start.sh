@@ -23,7 +23,7 @@ echo "starting Jack"
 jackd -P70 -p16 -t2000 -d alsa -d hw:sndrpihifiberry -p 128 -n 3 -r 22050 -s &
 
 # leave enough time for jack to start before launching PD
-sleep 15
+sleep 5
 
 # PYTHON
 # todo
