@@ -28,13 +28,11 @@ sleep 15
 # PYTHON
 # todo
 #MACADDRESS=$(cat /sys/class/net/ens1f0/address)
-STARTTIME=$(date +%s)
+# STARTTIME=$(date --iso-8601=seconds)
+CURRENTEPOCTIME=`date +"%Y-%m-%d %T"`
 
 echo "starting PD"
 # PUREDATA
-pd -nogui -jack -open "/home/pi/bs-casula/_BS_CASULA_PI.pd" -send "; STARTTIME $STARTTIME" &
-
-
-
+pd -nogui -jack -open "/home/pi/bs-casula/_BS_CASULA_PI.pd" -send "; STARTTIME $CURRENTEPOCTIME" &
 
 exit
