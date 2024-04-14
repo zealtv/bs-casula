@@ -29,7 +29,6 @@ sleep 5
 # todo
 
 #MACADDRESS=$(cat /sys/class/net/ens1f0/address)
-#STARTTIME is passed in to seed random numbers etc
 now=$(date --iso-8601=seconds)
 STARTDATE=$(date -d "$now" +%Y%m%d)
 STARTTIME=$(date -d "$now" +%H%M%S)
@@ -37,6 +36,6 @@ STARTTIME=$(date -d "$now" +%H%M%S)
 
 echo "starting PD"
 # PUREDATA
-pd -nogui -jack -open "/home/pi/bs-casula/_BS_CASULA_PI.pd" -send "; STARTTIME $STARTTIME" &
+pd -nogui -jack -open "/home/pi/bs-casula/_BS_CASULA_PI.pd" -send "; STARTTIME $STARTTIME; RANDOM $RANDOM" &
 
 exit
