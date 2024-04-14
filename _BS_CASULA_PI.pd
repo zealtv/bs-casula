@@ -1,4 +1,4 @@
-#N canvas 40 94 474 492 12;
+#N canvas 40 94 510 520 12;
 #X declare -path ./bop/bop.p;
 #X obj 21 418 dac~, f 26;
 #X obj 22 259 r cmd;
@@ -14,14 +14,14 @@
 #X text 35 359 left;
 #X text 216 358 right;
 #X obj 21 22 declare -path ./bop/bop.p;
-#X obj 293 84 tgl 19 0 empty empty start/stop 24 10 0 12 #fcfcfc #000000 #000000 0 1;
-#X obj 293 115 input-and-sequencing;
-#X obj 21 179 print STARTTIME;
-#X obj 21 155 r STARTTIME;
-#X obj 145 154 r RANDOM;
-#X obj 145 178 print RANDOM;
-#X obj 246 154 r MACADDRESS;
-#X obj 246 178 print MACADDRESS;
+#X obj 141 84 tgl 19 0 empty empty start/stop 24 10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 141 115 input-and-sequencing;
+#X obj 344 51 print STARTTIME;
+#X obj 344 27 r STARTTIME;
+#X obj 346 120 r RANDOM;
+#X obj 346 144 print RANDOM;
+#X obj 345 75 r MACADDRESS;
+#X obj 345 99 print MACADDRESS;
 #X connect 1 0 3 0;
 #X connect 2 0 0 0;
 #X connect 2 1 7 0;

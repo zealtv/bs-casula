@@ -100,8 +100,8 @@
 #X obj 669 102 route bedrock;
 #X obj 669 146 route start stop follow;
 #X obj 668 374 bop.p.shuffle;
-#X obj 694 330 sub/randomseed;
-#X obj 756 296 print randomseed;
+#X obj 692 296 sub/randomseed;
+#X obj 711 318 print randomseed;
 #X connect 3 0 13 0;
 #X connect 6 0 7 0;
 #X connect 7 0 8 1;
