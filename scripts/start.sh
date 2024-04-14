@@ -28,7 +28,7 @@ sleep 5
 # PYTHON
 # todo
 
-MACADDRESS=$(cat /sys/class/net/wlan0/address)
+MACADDRESS=$(cat /sys/class/net/wlan0/address | tr ':' ' ')
 now=$(date --iso-8601=seconds)
 STARTDATE=$(date -d "$now" +%Y%m%d)
 STARTTIME=$(date -d "$now" +%H%M%S)
