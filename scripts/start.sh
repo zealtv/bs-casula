@@ -33,6 +33,7 @@ now=$(date --iso-8601=seconds)
 STARTDATE=$(date -d "$now" +%Y%m%d)
 STARTTIME=$(date -d "$now" +%H%M%S)
 
+echo "MAC: $MACADDRESS"
 
 echo "starting PD"
 # PUREDATA
