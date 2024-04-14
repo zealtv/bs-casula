@@ -20,6 +20,8 @@
 #X obj 21 155 r STARTTIME;
 #X obj 145 154 r RANDOM;
 #X obj 145 178 print RANDOM;
+#X obj 246 154 r MACADDRESS;
+#X obj 246 178 print MACADDRESS;
 #X connect 1 0 3 0;
 #X connect 2 0 0 0;
 #X connect 2 1 7 0;
@@ -34,3 +36,4 @@
 #X connect 14 0 15 0;
 #X connect 17 0 16 0;
 #X connect 18 0 19 0;
+#X connect 20 0 21 0;

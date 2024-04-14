@@ -1,8 +1,8 @@
 #N canvas 63 100 450 300 12;
 #X obj 17 107 outlet;
 #X msg 18 70 seed \$1;
-#X obj 18 15 r STARTTIME;
 #X obj 18 39 + \$0;
+#X obj 18 15 r RANDOM;
 #X connect 1 0 0 0;
-#X connect 2 0 3 0;
-#X connect 3 0 1 0;
+#X connect 2 0 1 0;
+#X connect 3 0 2 0;

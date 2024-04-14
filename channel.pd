@@ -1,4 +1,4 @@
-#N canvas 55 64 1059 762 12;
+#N canvas 202 84 1059 762 12;
 #X declare -path ./bop;
 #X declare -path ./bop.p;
 #X obj 31 63 declare -path ./bop;
@@ -59,8 +59,10 @@
 #X obj 161 187 t b b;
 #X obj 175 325 *;
 #X floatatom 263 350 10 0 0 0 - - - 0;
-#X obj 115 255 bop.p.randomer 4;
-#X obj 175 392 bop.p.randomer;
+#X obj 115 255 random 4;
+#X obj 46 170 sub/randomseed;
+#X obj 175 392 random;
+#X obj 52 354 sub/randomseed;
 #X connect 0 0 16 0;
 #X connect 3 0 7 1;
 #X connect 4 0 8 0;
@@ -68,8 +70,8 @@
 #X connect 6 0 20 0;
 #X connect 7 0 25 1;
 #X connect 8 0 17 1;
-#X connect 9 0 28 0;
-#X connect 9 1 28 1;
+#X connect 9 0 29 0;
+#X connect 9 1 29 1;
 #X connect 10 0 4 0;
 #X connect 10 1 3 0;
 #X connect 10 1 5 0;
@@ -88,15 +90,18 @@
 #X connect 25 0 9 0;
 #X connect 25 0 26 0;
 #X connect 27 0 23 0;
-#X connect 28 0 1 0;
-#X connect 28 0 14 0;
+#X connect 28 0 27 0;
+#X connect 29 0 1 0;
+#X connect 29 0 14 0;
+#X connect 30 0 29 0;
 #X restore 774 219 pd follow;
 #X obj 217 307 r \$0-in;
 #X obj 553 381 route bedrock;
 #X obj 669 102 route bedrock;
 #X obj 669 146 route start stop follow;
 #X obj 668 374 bop.p.shuffle;
-#X obj 694 330 sub/timeseed;
+#X obj 694 330 sub/randomseed;
+#X obj 756 296 print randomseed;
 #X connect 3 0 13 0;
 #X connect 6 0 7 0;
 #X connect 7 0 8 1;
@@ -123,3 +128,4 @@
 #X connect 35 0 25 0;
 #X connect 35 0 26 0;
 #X connect 36 0 35 0;
+#X connect 36 0 37 0;
